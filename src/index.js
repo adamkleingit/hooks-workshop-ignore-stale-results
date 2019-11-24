@@ -5,7 +5,7 @@ function App() {
   const [name, setName] = useState("");
   const [results, setResults] = useState("");
 
-  useEffect(() => {
+  useEffect(function fetchResults() {
     if (name) {
       setTimeout(() => {
         // mock server call
